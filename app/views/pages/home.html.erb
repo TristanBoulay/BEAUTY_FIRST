@@ -6,10 +6,10 @@
     <button class="btn btn-primary">discover</button>
   </div>
  </div>
- 
+
 
 <div class= "cards-container">
-        <% @services.each do |service| %>
+    <% @services.each do |service| %>
       <div class="card-trip">
         <%= cl_image_tag service.photo.key %>
         <div class="card-trip-infos">
@@ -25,5 +25,5 @@
           </div>
         </div>
       </div>
-      <% end %>
+    <% end %>
 </div>
