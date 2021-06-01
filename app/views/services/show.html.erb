@@ -1,12 +1,22 @@
 
 <h2 class= "display-2"><%= @service.title %></h2>
 <h3 class= "display-3"> Name of the place : <%= @service.name %></h3>
-<button type="button" class="btn btn-primary">book here</button>
   <div>
       <%= cl_image_tag @service.photo.key %>
   </div>
-<p>address: <%= @service.address %></p>
-<p><%= @service.price %> euros</p>
+    <p>address: <%= @service.address %></p>
+    <p><%= @service.price %> euros</p>
+    <button type="button" class="btn btn-primary btn-a-color"><%= link_to "book here", new_service_booking_path(@service) %></button>
+    <ul>
+     <li>monday: 10h - 19h</li>
+     <li>tuesday: 10h - 19h</li>
+     <li>wednesday: 10h - 19h</li>
+     <li>thursday: 10h - 19h</li>
+     <li>friday: 10h - 19h</li>
+     <li>saturday: 10h - 19h</li>
+     <li>sunday: 10h - 19h</li>
+    </ul>
+  </div>
 <div id="map"></div>
 
 </div>
