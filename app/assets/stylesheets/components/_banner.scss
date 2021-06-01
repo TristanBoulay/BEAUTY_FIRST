@@ -1,10 +1,28 @@
 
 .hero-image {
   background-image: url(cover.jpg);
-  height: 600px;
+  height: 300px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+
+.button-home {
+  background-color: #ce9a4c;
+  color:white;
+  border-radius: 10px;
+  border:none;
+  padding: 10px 15px;
+}
+
+.button-home:hover {
+ background-color:#ce9a4c;
+}
+
+.hero-text {
+  text-align: center;
+  padding: 50px 0;
 }
 
 h3 {
@@ -14,3 +32,6 @@ h3 {
 p {
   color:white;
 }
+
+
+
