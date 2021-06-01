@@ -3,7 +3,7 @@
   <div class= "cards-container">
         <% @services.each do |service| %>
       <div class="card-trip">
-        <%= image_tag "manicure" %>
+        <%= cl_image_tag service.photo.key %>
         <div class="card-trip-infos">
           <div>
             <h2><%= service.title %></h2>
