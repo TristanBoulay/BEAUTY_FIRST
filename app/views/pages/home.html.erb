@@ -1,16 +1,16 @@
-<h1>Welcome to Beauty First</h1>
-
 
 <div class="hero-image">
   <div class="hero-text">
     <h3> Welcome to your first beauty App!</h3>
     <p>Checkout all our services</p>
     <button class="btn btn-primary"><%= link_to "discover", services_path  %></button>
+    <button class="button-home">discover</button>
   </div>
  </div>
 
+
 <div class= "cards-container">
-        <% @services.each do |service| %>
+    <% @services.each do |service| %>
       <div class="card-trip">
         <%= cl_image_tag service.photo.key %>
         <div class="card-trip-infos">
@@ -26,5 +26,5 @@
           </div>
         </div>
       </div>
-      <% end %>
+    <% end %>
 </div>
