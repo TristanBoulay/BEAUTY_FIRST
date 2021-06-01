@@ -1,14 +1,16 @@
 <h1>INDEX PAGE</h1>
 
-<div>
   <h1>Services</h1>
 
-<ul>
-<% @services.each do |service| %>
-<li>
-  <%= link_to service.title, service_path(service) %>
-</li>
+<div class="row">
+  <% @services.each do |service| %>
+  <div class="co-12 colsm-6 col-md-4">
+    <%= link_to service_path(service), class: 'text-decoration-none' do %>
+    <div class="card-category my-4" data-aos="zoom-in" style="card-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= asset_path('facial_service.png') %>)">
+      <%= service.title %>
+    </div>
+    <% end %>
+  </div>
   <% end %>
-</ul>
 </div>
 
