@@ -5,102 +5,20 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+puts "Creating 30 services..."
 
-puts "Destroying all services!"
-Service.destroy_all
+services = ["Deep tissue massage", 'Hair styling, hair cuts', 'Spray tanning and sunless tanning', 'Cellulite treatments', 'Colonic Hydrotherapy', 'Manicure', 'Pedicure', 'Hydrafacial', 'Hair extensions', 'Laser skin rejuvenation', 'Foot massage', 'Colonic Hydrotherapy', 'Body exfoliation treatments', 'Body waxing treatments', 'Laser hair removal']
 
-puts "Creating 15 services..."
+30.times do
+  service = Service.new(
+    title: services.sample,
+    name: Faker::Company.name,
+    address: Faker::Address.street_address,
+    price: Faker::Commerce.price
+  )
+  service.save!
+end
 
-Service.create!(
-  title: 'Deep tissue massage',
-  address: Faker::Address.street_address,
-  price: Faker::Commerce.price
-)
-
-Service.create!(
-  title: 'Hair styling, hair cuts',
-  address: Faker::Address.street_address,
-  price: Faker::Commerce.price
-)
-
-Service.create!(
-  title: 'Spray tanning and sunless tanning',
-  address: Faker::Address.street_address,
-  price: Faker::Commerce.price
-)
-
-Service.create!(
-  title: 'Cellulite treatments',
-  address: Faker::Address.street_address,
-  price: Faker::Commerce.price
-)
-
-Service.create!(
-  title: 'Colonic Hydrotherapy',
-  address: Faker::Address.street_address,
-  price: Faker::Commerce.price
-)
-
-Service.create!(
-  title: 'Manicure',
-  address: Faker::Address.street_address,
-  price: Faker::Commerce.price
-)
-
-Service.create!(
-  title: 'Pedicure',
-  address: Faker::Address.street_address,
-  price: Faker::Commerce.price
-)
-
-Service.create!(
-  title: 'Hydrafacial',
-  address: Faker::Address.street_address,
-  price: Faker::Commerce.price
-)
-
-Service.create!(
-  title: 'Laser skin rejuvenation',
-  address: Faker::Address.street_address,
-  price: Faker::Commerce.price
-)
-
-Service.create!(
-  title: 'Hair extensions',
-  address: Faker::Address.street_address,
-  price: Faker::Commerce.price
-)
-
-Service.create!(
-  title: 'Foot massage',
-  address: Faker::Address.street_address,
-  price: Faker::Commerce.price
-)
-
-Service.create!(
-  title: 'Colonic Hydrotherapy',
-  address: Faker::Address.street_address,
-  price: Faker::Commerce.price
-)
-
-Service.create!(
-  title: 'Body exfoliation treatments',
-  address: Faker::Address.street_address,
-  price: Faker::Commerce.price
-)
-
-Service.create!(
-  title: 'Body waxing treatments',
-  address: Faker::Address.street_address,
-  price: Faker::Commerce.price
-)
-
-Service.create!(
-  title: 'Laser hair removal',
-  address: Faker::Address.street_address,
-  price: Faker::Commerce.price
-)
-
-puts "All done"
+puts 'finished'
 
 
