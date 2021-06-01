@@ -1,5 +1,4 @@
 .navbar-lewagon {
-  justify-content: space-between;
   background: #F0EFEB;
 }
 
@@ -8,9 +7,32 @@
 }
 
 .navbar-lewagon .navbar-brand img {
-  width: 40px;
+  width: 90px;
+
 }
 
-.logo {
-  height:90px;
+.collapse .navbar-collapse ul li{
+  display: inline;
 }
+
+
+
+.navbar-light .navbar-nav .nav-link {
+   display:flex;
+    color: #CB997E;
+}
+
+
+.content-center{
+  justify-content:space-between;
+
+
+}
+
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active{
+  color: #CB997E;
+  text-align:center;
+}
+
+
+
