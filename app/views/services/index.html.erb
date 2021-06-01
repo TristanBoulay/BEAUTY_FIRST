@@ -1,1 +1,14 @@
 <h1>INDEX PAGE</h1>
+
+<div>
+  <h1>Services</h1>
+
+<ul>
+<% @services.each do |service| %>
+<li>
+  <%= link_to service.title, service_path(service) %>
+</li>
+  <% end %>
+</ul>
+</div>
+
