@@ -2,19 +2,9 @@
 <h2 class= "display-2"><%= @service.title %></h2>
 <h3 class= "display-3"> Name of the place : <%= @service.name %></h3>
 <button type="button" class="btn btn-primary">book here</button>
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <%= cl_image_tag @service.photo.key %> class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <%= image_tag "manicure" %> class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <%= image_tag "manicure" %> class="d-block w-100" alt="...">
-    </div>
+  <div>
+      <%= cl_image_tag @service.photo.key %>
   </div>
-</div>
 <p>address: <%= @service.address %></p>
 <p><%= @service.price %> euros</p>
 <div id="map"></div>
