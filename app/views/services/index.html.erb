@@ -1,1 +1,34 @@
-<h1>INDEX PAGE</h1>
+
+<h1 style= "text-align:center">Services</h1>
+  <div class= "cards-container">
+        <% @services.each do |service| %>
+      <div class="card-trip">
+        <%= image_tag "manicure" %>
+        <div class="card-trip-infos">
+          <div>
+            <h2><%= service.title %></h2>
+            <p>find the best <%= service.title %> in town</p>
+          </div>
+          <div>
+            <%= link_to service_path(service), class: 'text-decoration-none' do %>
+            <div class="btn btn-primary">book here</div>
+            <% end %>
+            <h2 class="card-trip-pricing"><%= service.price %> Euros</h2>
+          </div>
+        </div>
+      </div>
+      <% end %>
+</div>
+
+<!-- <div class="row">
+  <%# @services.each do |service| %>
+  <div class="co-12 colsm-6 col-md-4">
+    <%#= link_to service_path(service), class: 'text-decoration-none' do %>
+    <div class="card-category my-4" data-aos="zoom-in" style="card-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= asset_path('facial_service.png') %>)">
+      <%#= service.title %>
+    </div>
+    <%# end %>
+  </div>
+
+</div> -->
+
