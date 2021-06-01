@@ -1,3 +1,11 @@
+.page-container {
+display: grid;
+grid-template-rows: auto 1fr auto;
+min-height: 100vh;
+}
+
+
+
 footer {
   bottom:0;
   width:100%;
@@ -38,8 +46,6 @@ footer .item.social {
   text-align:right;
   color: #CB997E;
 }
-
-
 
 
 @media (max-width:767px) {
