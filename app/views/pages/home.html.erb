@@ -1,7 +1,29 @@
+
 <div class="hero-image">
   <div class="hero-text">
     <h3> Welcome to your first beauty App!</h3>
     <p>Checkout all our services</p>
     <button class="btn btn-primary">discover</button>
   </div>
+ </div>
+ 
+
+<div class= "cards-container">
+        <% @services.each do |service| %>
+      <div class="card-trip">
+        <%= cl_image_tag service.photo.key %>
+        <div class="card-trip-infos">
+          <div>
+            <h2><%= service.title %></h2>
+            <p>find the best <%= service.title %> in town</p>
+          </div>
+          <div>
+            <%= link_to service_path(service), class: 'text-decoration-none' do %>
+            <div class="btn btn-primary">book here</div>
+            <% end %>
+            <h2 class="card-trip-pricing"><%= service.price %> Euros</h2>
+          </div>
+        </div>
+      </div>
+      <% end %>
 </div>
