@@ -1,13 +1,19 @@
-
 <h2 class= "display-2"><%= @service.title %></h2>
-<h3 class= "display-3"> Name of the place : <%= @service.name %></h3>
-  <div>
-      <%= cl_image_tag @service.photo.key %>
-  </div>
+
+<div class="container">
+  <div class="card-trip">
+    <div class="img-show">
+    <%= cl_image_tag @service.photo.key %>
+    </div>
+  <div class="card-trip-infos">
+    <h3 class= "display-3"> <%= @service.name %></h3>
     <p>address: <%= @service.address %></p>
-    <p><%= @service.price %> euros</p>
-    <button type="button" class="btn btn-primary btn-a-color"><%= link_to "book here", new_service_booking_path(@service) %></button>
-    <ul>
+    <p class="card-trip-pricing"><%= @service.price %> euros</p>
+  </div>
+ </div>
+<button type="button" class="btn btn-primary btn-a-color card-trip-user "><%= link_to "book here", new_service_booking_path(@service) %></button>
+</div>
+ <ul class="horaire">
      <li>monday: 10h - 19h</li>
      <li>tuesday: 10h - 19h</li>
      <li>wednesday: 10h - 19h</li>
@@ -15,8 +21,8 @@
      <li>friday: 10h - 19h</li>
      <li>saturday: 10h - 19h</li>
      <li>sunday: 10h - 19h</li>
-    </ul>
-  </div>
+</ul>
 <div id="map"></div>
 
-</div>
+
+

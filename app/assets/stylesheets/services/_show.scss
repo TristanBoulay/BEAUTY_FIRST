@@ -10,5 +10,71 @@
   a{
     color: black;
   }
-  
+
+}
+
+
+
+.card-trip {
+  display:flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-top: 120px;
+  height: 350px;
+  overflow: hidden;
+  background:  #B7B7A4;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 10px;
+
+}
+
+.img-show img {
+  height: 350px;
+  width: 50%;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card-trip h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  color:black;
+}
+
+.card-trip p {
+  font-size: 12px;
+  opacity: .7;
+  margin: 0;
+}
+
+
+.card-trip .card-trip-infos {
+  padding: 16px;
+  align-items: flex-end;
+  position: relative;
+}
+
+.card-trip-infos .card-trip-user {
+  position: absolute;
+  right: 16px;
+  top: -20px;
+  width: 40px;
+}
+
+.display-3 {
+    font-size: 4.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+    font-size: 25px;
+    color: black;
+}
+
+.display-2 {
+  margin-top: 90px;
+ text-align: center;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 1.2;
 }
