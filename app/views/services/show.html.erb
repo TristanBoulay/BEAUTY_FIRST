@@ -13,7 +13,7 @@
     <% if current_user.bookings.where(service: @service).present? %>
       <p class="address-show">You Have a Booking for this Service</p>
      <% else %>
-      <%= button_to "BOOK NOW", new_service_booking_path(@service), class: "btn btn-primary btn-a-color show-button" %>
+      <%= link_to "BOOK NOW", new_service_booking_path(@service), class: "btn btn-primary btn-a-color show-button" %>
      <% end %>
  <ul class="horaire">
      <li class="far fa-calendar-times"></i> Monday - Friday</li>
