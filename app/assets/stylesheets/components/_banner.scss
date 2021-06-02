@@ -7,17 +7,16 @@
   background-size: cover;
 }
 
-
-.button-home {
-  background-color: #ce9a4c;
-  color:white;
+.btn-primary {
+  color: white;
   border-radius: 10px;
   border:none;
   padding: 10px 15px;
 }
 
-.button-home:hover {
+.btn:hover {
  background-color:#ce9a4c;
+ opacity: 0.5;
 }
 
 .hero-text {
