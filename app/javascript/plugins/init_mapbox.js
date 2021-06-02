@@ -61,5 +61,15 @@ const initMapbox = () => {
       .setPopup(popup)
       .addTo(map);
   });
+  
+  import MapboxGeocoder from '@mapbox/mapbox-gl-geocoder';
+  import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css';
+
+  // [...]
+  if (mapElement) {
+    // [...]
+    map.addControl(new MapboxGeocoder({ accessToken: mapboxgl.accessToken,
+                                        mapboxgl: mapboxgl }));
+  }
 
 export { initMapbox };
