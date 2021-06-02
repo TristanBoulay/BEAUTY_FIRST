@@ -1,10 +1,12 @@
 .btn-primary {
   text-decoration: none;
   background-color: #ce9a4c;
-  color: white;
   border-radius: 10px;
   border:none;
   padding: 10px 15px;
+  a {
+    color: white;
+  }
 }
 
 .btn:hover {
