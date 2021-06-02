@@ -1,22 +1,24 @@
-
 <h2 class= "display-2"><%= @service.title %></h2>
-<h3 class= "display-3"> Name of the place : <%= @service.name %></h3>
-  <div>
-      <%= cl_image_tag @service.photo.key %>
+
+<div class="container">
+  <div class="card-trip-show">
+    <div class="img-show">
+    <%= cl_image_tag @service.photo.key %>
+    </div>
+  <div class="card-trip-infos-show">
+    <h3 class= "display-3-show"> <%= @service.name %></h3>
+    <p class="address-show">Address: <%= @service.address %></p>
+    <p class="card-trip-pricing-show"><%= @service.price %>€</p>
   </div>
-    <p>address: <%= @service.address %></p>
-    <p><%= @service.price %> euros</p>
-    <button type="button" class="btn btn-primary btn-a-color"><%= link_to "book here", new_service_booking_path(@service) %></button>
-    <ul>
-     <li>monday: 10h - 19h</li>
-     <li>tuesday: 10h - 19h</li>
-     <li>wednesday: 10h - 19h</li>
-     <li>thursday: 10h - 19h</li>
-     <li>friday: 10h - 19h</li>
-     <li>saturday: 10h - 19h</li>
-     <li>sunday: 10h - 19h</li>
-    </ul>
-  </div>
+  <button type="button" class="btn btn-primary btn-a-color show-button"><%= link_to "BOOK NOW", new_service_booking_path(@service) %></button>
+ <ul class="horaire">
+     <li class="far fa-calendar-times"></i> Monday - Friday</li>
+     <li class="far fa-clock"></i> 10h / 19h</li>
+</ul>
+ </div>
+</div>
+
 <div id="map"></div>
 
-</div>
+
+
