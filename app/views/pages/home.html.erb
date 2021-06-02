@@ -4,9 +4,20 @@
     <h3> Welcome to your first beauty App!</h3>
     <p>Checkout all our services</p>
     <button class="btn btn-primary"><%= link_to "discover", services_path  %></button>
-    <button class="button-home">discover</button>
   </div>
  </div>
+
+ <div class="service-text"><h2 style= "text-align:center" >Get 20% off your next treatment! Use code: ILOVETOCODE</h2></div>
+
+ <%= simple_form_for :search, url: services_path, method: :get do |f| %>
+  <div class="search-form-control form-group">
+    <input class="form-control string required" type="text" name="search[query]" id="search_query" placeholder="Enter your location" />
+    <input class="form-control string required" type="text" name="search[query]" id="search_query" placeholder="Search for beauty services" />
+    <span><button name="button" type="submit" class="btn btn-flat">
+      <i class="fas fa-search"></i> Search
+    </button></span>
+  </div>
+<% end %>
 
 
 <div class= "cards-container">
@@ -20,7 +31,7 @@
           </div>
           <div>
             <%= link_to service_path(service), class: 'text-decoration-none' do %>
-            <div class="btn btn-primary">book here</div>
+            <div class="btn btn-primary">Book now</div>
             <% end %>
             <h2 class="card-trip-pricing"><%= service.price %> Euros</h2>
           </div>
