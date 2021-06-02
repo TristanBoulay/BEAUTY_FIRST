@@ -1,5 +1,5 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon content-center>
-  <%= link_to "#", class: "navbar-brand" do %>
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon content-center">
+  <%= link_to root_path, class: "navbar-brand" do %>
     <%= image_tag "logo.png"%>
     <% end %>
 
@@ -12,19 +12,19 @@
 
     <ul class="navbar-nav mr-auto">
       <% if user_signed_in? %>
-      <%= link_to destroy_user_session_path, method: :delete do %>
-        <li class="fas fa-warehouse"></li>
-      <% end %>
-      <% else %>
-      <%= link_to new_user_session_path do %>
-        <li class="far fa-user"></li>
-         <%= link_to new_user_registration_path do %>
-        <li class="fas fa-warehouse"></li>
         <%= link_to services_path do %>
-        <li class="fa fa-shopping-cart"></li>
+          <li class="fa fa-shopping-cart"></li>
+          <% end %>
+        <%= link_to destroy_user_session_path, method: :delete do %>
+          <li class="fas fa-warehouse"></li>
         <% end %>
-      <% end %>
-      <% end %>
+        <% else %>
+        <%= link_to new_user_session_path do %>
+          <li class="far fa-user"></li>
+           <%= link_to new_user_registration_path do %>
+          <li class="fas fa-warehouse"></li>
+           <% end %>
+        <% end %>
       <% end %>
     </ul>
   </div>

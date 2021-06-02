@@ -9,7 +9,11 @@
     <p class="address-show">Address: <%= @service.address %></p>
     <p class="card-trip-pricing-show"><%= @service.price %>€</p>
   </div>
-  <button type="button" class="btn btn-primary btn-a-color show-button"><%= link_to "BOOK NOW", new_service_booking_path(@service) %></button>
+    <% if current_user.bookings.where(service: @service).present? %>
+      <p class="address-show">You Have a Booking for this Service</p>
+     <% else %>
+      <%= button_to "BOOK NOW", new_service_booking_path(@service), class: "btn btn-primary btn-a-color show-button" %>
+     <% end %>
  <ul class="horaire">
      <li class="far fa-calendar-times"></i> Monday - Friday</li>
      <li class="far fa-clock"></i> 10h / 19h</li>
@@ -18,6 +22,7 @@
 </div>
 
 <div id="map"></div>
+
 
 
 
