@@ -1,4 +1,6 @@
 .navbar-lewagon {
+  position: sticky;
+  top:0;
   background: #F0EFEB;
 }
 
@@ -34,5 +36,17 @@
   text-align:center;
 }
 
+.mr-auto {
+  padding-left: 3px;
+  padding-right: 3px;
+  color: #CB997E;
+  padding: 0px 20px;
+  border: none;
+}
+
+.mr-auto li {
+  display: inline;
+  padding: 10px;
+}
 
 
