@@ -14,67 +14,88 @@
 }
 
 
-
-.card-trip {
-  display:flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  margin-top: 120px;
-  height: 350px;
-  overflow: hidden;
-  background:  #B7B7A4;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  border-radius: 10px;
-
-}
-
-.img-show img {
-  height: 350px;
-  width: 50%;
-  object-fit: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.card-trip h2 {
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0;
-  color:black;
-}
-
-.card-trip p {
-  font-size: 12px;
-  opacity: .7;
-  margin: 0;
-}
-
-
-.card-trip .card-trip-infos {
-  padding: 16px;
-  align-items: flex-end;
-  position: relative;
-}
-
-.card-trip-infos .card-trip-user {
-  position: absolute;
-  right: 16px;
-  top: -20px;
-  width: 40px;
-}
-
-.display-3 {
-    font-size: 4.5rem;
-    font-weight: 300;
-    line-height: 1.2;
-    font-size: 25px;
-    color: black;
-}
-
 .display-2 {
-  margin-top: 90px;
- text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 300;
     line-height: 1.2;
+    text-align:center;
+    padding:10px;
 }
+.img-show img {
+   height: 200px;
+   width: 100%;
+   object-fit: cover;
+
+}
+
+.card-trip-show {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+
+  .display-3-show {
+    font-size: 27px;
+    font-weight: bold;
+    margin: 0;
+    color: #B7B7A4;
+    padding: 10px 0 0 30px;
+}
+
+.card-trip-pricing-show {
+  border: 1px solid grey;
+  position: absolute;
+  top: 320px;
+  left: 1130px;
+  margin: 0;
+  color: #B7B7A4 ;
+  width: 40px;
+  border-radius: 50%;
+  background-color : #6E798C;
+  color:white;
+  font-weight:bold;
+  font-size: 28px;
+  text-align: center;
+
+}
+
+
+ol, ul, dl {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    list-style: none;
+}
+
+.show-button {
+  margin: 0 0 10px 30px;
+  padding: 10px 18px;
+  border-radius: 10px;
+}
+
+.btn-a-color a {
+    color: black;
+    text-decoration: none;
+}
+
+.address-show {
+    color: #B7B7A4;
+    padding-left:30px;
+
+}
+
+
+.fa-calendar-times:before {
+    content: "\f273";
+    font-size: 20px;
+    color: #B7B7A4;
+}
+
+.fa-clock:before {
+    content: "\f017";
+     font-size: 20px;
+    color: #B7B7A4;
+
+}
+
+
