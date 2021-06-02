@@ -5,14 +5,16 @@ min-height: 100vh;
 }
 
 
-
 footer {
+  position:fixed;
+  position:absolute;
   bottom:0;
   width:100%;
   height:90px;
   padding:20px 10px 200px 60px;
   background-color: #F0EFEB ;
   color:#4b4c4d;
+  margin-top: 60px;
 }
 
  footer h3 {

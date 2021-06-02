@@ -1,10 +1,17 @@
 .search-form-control {
-    position: relative;
     display: flex;
     border-radius: 30%;
     border: none #DDBEA9;
+    margin :40px;
+  }
+
+  .form-control {
+
   }
 
 
 
-
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+    margin: 2px;
+}
