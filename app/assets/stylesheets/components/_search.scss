@@ -1,17 +1,23 @@
 .search-form-control {
-    display: flex;
-    border-radius: 30%;
-    border: none #DDBEA9;
-    margin :40px;
-  }
+  position: relative;
+}
 
-  .form-control {
+.search-form-control .btn-search {
+  position: absolute;
+  top: 8px;
+  bottom: 8px;
+  right: 8px;
+  padding: 10px;
+}
 
-  }
+.search-form-control .form-control {
+  height: 3.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  border: 1px solid #E7E7E7;
+}
 
-
-
-.btn:not(:disabled):not(.disabled) {
+.btn-search:not(:disabled):not(.disabled) {
     cursor: pointer;
     margin: 2px;
+    margin-right: 140px;
 }
