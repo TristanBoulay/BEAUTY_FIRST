@@ -31,6 +31,11 @@ import { initTyped } from '../components/typed';
 document.addEventListener('turbolinks:load', () => {
   initMapbox();
    initTyped();
+import { initFlatpickr } from "../plugins/flatpickr";
+
+document.addEventListener('turbolinks:load', () => {
+  initMapbox();
+  initFlatpickr();
 })
 
 
