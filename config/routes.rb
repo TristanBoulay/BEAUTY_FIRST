@@ -7,6 +7,7 @@ Rails.application.routes.draw do
     resources :bookings, only: %i[new create show]
     resources :reviews, only: %i[new create show]
   end
+  get "team", to: "pages#team"
 
   resources :bookings, only: :destroy
 end
