@@ -1,0 +1,41 @@
+.banner {
+  background-color: #6E798C;
+  height: 70%;
+  position: relative;
+}
+
+.text-position {
+  position: relative;
+  padding-top: 30px;
+}
+
+h1 {
+  text-align: center;
+  color: #F0EFEB;
+}
+
+h2 {
+  text-align: center;
+  color: #F0EFEB;
+}
+
+.team-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-position {
+  position: absolute;
+  bottom: 10%;
+
+}
+
+
+.may {
+  margin-right: 20px;
+}
+
+.trist {
+  margin-left: 20px;
+}
