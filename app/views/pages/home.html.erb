@@ -9,16 +9,9 @@
 
  <div class="service-text"><h2 style= "text-align:center" >Get 20% off your next treatment! Use code: ILOVETOCODE</h2></div>
 
- <%= simple_form_for :search, url: services_path, method: :get do |f| %>
-  <div class="search-form-control form-group">
-    <input class="form-control string required" type="text" name="search[query]" id="search_query" placeholder="Enter your location" />
-    <input class="form-control string required" type="text" name="search[query]" id="search_query" placeholder="Search for beauty services" />
-    <span><button name="button" type="submit" class="btn btn-flat">
-      <i class="fas fa-search"></i> Search
-    </button></span>
-  </div>
-<% end %>
-
+ <div class="search-form-control">
+ <%= form_tag services_path, method: :get do %><%= text_field_tag :query, params[:query], class: "form-control", placeholder: "Find a service"%><%= submit_tag "Search", class: "btn-search btn-primary" %><% end %>
+</div>
 
 <div class= "cards-container">
     <% @services.each do |service| %>
