@@ -5,10 +5,11 @@ const initTyped = () => {
   if (element) {
     new Typed('#banner-typed-text', {
       strings: ["Get 20% off your next treatment!", "Use code: ILOVETOCODE"],
-      typeSpeed: 30,
+      typeSpeed: 15,
       loop: true,
       loopCount: Infinity,
-      showCursor: false
+      showCursor: false,
+      startDelay: 3,
     });
   }
 };

@@ -1,0 +1,12 @@
+
+
+<div class="img-show-review">
+    <%= cl_image_tag @service.photo.key %>
+</div>
+
+  <h3 class="title-review"> Add a review on your service <%= @service.title %></h3>
+   <%= simple_form_for [@service,@review] do |f| %>
+    <%= f.input :comment %>
+    <%= f.submit class: 'btn btn-primary' %>
+    <% end %>
+
