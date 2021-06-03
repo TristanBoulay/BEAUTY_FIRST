@@ -14,6 +14,14 @@ class ServicesController < ApplicationController
 
   def show
     @service = Service.find(params[:id])
+    @markers = [
+      {
+        lat: @service.latitude,
+        lng: @service.longitude,
+        info_window: render_to_string(partial: "info_window", locals: { service: @service }),
+        # image_url: helpers.asset_url('logo.png')
+      }
+    ]
   end
 
 
