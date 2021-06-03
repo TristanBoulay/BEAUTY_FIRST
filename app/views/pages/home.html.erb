@@ -7,7 +7,7 @@
   </div>
  </div>
 
- <div class="service-text"><h2 style= "text-align:center" ><span id="banner-typed-text"></span></h2></div>
+ <div class="service-text"><h2 id="banner-typed-text" style= "text-align:center;min-height: 25px;"></h2></div>
 
  <div class="search-form-control">
  <%= form_tag services_path, method: :get do %><%= text_field_tag :query, params[:query], class: "form-control", placeholder: "Find a service"%><%= submit_tag "Search", class: "btn-search btn-primary" %><% end %>
