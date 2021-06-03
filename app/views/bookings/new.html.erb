@@ -3,9 +3,9 @@
 
 <h4>Choose a booking <%= @service.title %></h4>
         <%= simple_form_for [@service,@booking] do |f| %>
-          <%= f.input :start_date, placeholder: 'MM/DD/YYYY' %>
-             <%= f.input :end_date, placeholder: 'MM/DD/YYYY' %>
+          <%= f.input :start_date, as: :string, required: false, input_html: {class: "datepicker"} %>
+            <%= f.input :end_date, as: :string, required: false, input_html: {class: "datepicker"} %>
           <%= f.submit class: 'btn btn-primary' %>
         <% end %>
     </div>
-
+ </div>
