@@ -14,7 +14,7 @@
 </div>
 
 <div class= "cards-container">
-    <% @services.each do |service| %>
+    <% @services.sample(3).each do |service| %>
       <div class="card-trip">
         <%= cl_image_tag service.photo.key %>
         <div class="card-trip-infos">
