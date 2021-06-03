@@ -26,10 +26,13 @@ require("channels")
 import "bootstrap";
 import 'mapbox-gl/dist/mapbox-gl.css';
 import { initMapbox } from '../plugins/init_mapbox';
+import { initTyped } from '../components/typed';
 
 document.addEventListener('turbolinks:load', () => {
   initMapbox();
+   initTyped();
 })
+
 
 
 // Internal imports, e.g:
