@@ -22,8 +22,9 @@
      <li class="far fa-calendar-times"></i> Monday - Friday</li>
      <li class="far fa-clock"></i> 10h / 19h</li>
 </ul>
- </div>
- <%= link_to "Share a review!", new_service_review_path(@service), class: 'btn btn-primary'  %>
+
+
+<%= link_to "Share a review!", new_service_review_path(@service), class: 'btn btn-primary btn-review'  %>
    <% if @service.reviews.any? %>
  <div class="service-reviews">
   <%= @service.reviews.last.user.email %>
@@ -31,6 +32,9 @@
   <% @service.reviews.last.rating.to_i.times do  %><i class="fas fa-star" id="voted"></i> <% end %> <% (5 - @service.reviews.last.rating.to_i).times do  %><i class="fas fa-star" id="didnt-vote"></i> <% end %>
 </div>
 <% end %>
+
+ </div>
+
 
 
 <div id="map"
