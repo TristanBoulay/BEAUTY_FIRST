@@ -8,7 +8,11 @@ Rails.application.routes.draw do
     resources :reviews, only: %i[new create show]
   end
 
+  get "contact", to: "pages#contact"
+
   resources :bookings, only: :destroy
 end
+
+
 
 
