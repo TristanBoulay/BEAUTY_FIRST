@@ -28,11 +28,12 @@ import { initMapbox } from '../plugins/init_mapbox';
 import { initTyped } from '../components/typed';
 import { initFlatpickr } from "../plugins/flatpickr";
 
-
 document.addEventListener('turbolinks:load', () => {
   initMapbox();
    initTyped();
    initFlatpickr();
+
+
 })
 
 
