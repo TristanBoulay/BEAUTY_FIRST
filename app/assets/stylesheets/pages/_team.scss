@@ -1,7 +1,7 @@
 .banner {
-  background-color: #6E798C;
-  height: 70%;
-  position: relative;
+  background-color: #DDBEA9;
+   line-height: 100px;;
+    margin-top: 60px;
 }
 
 .text-position {
@@ -10,24 +10,17 @@
 }
 
 h1 {
+  font-family: 'Roboto', sans-serif;
   text-align: center;
   color: #F0EFEB;
 }
 
-h2 {
-  text-align: center;
-  color: #F0EFEB;
-}
+
 
 .team-container {
-  display: flex;
+   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.team-position {
-  position: absolute;
-  bottom: 10%;
 
 }
 
