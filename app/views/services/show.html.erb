@@ -26,10 +26,11 @@
 
 <%= link_to "Share a review!", new_service_review_path(@service), class: 'btn btn-primary btn-review'  %>
    <% if @service.reviews.any? %>
- <div class="service-reviews">
-  <%= @service.reviews.last.user.email %>
-  <%= @service.reviews.last.comment %>
-  <% @service.reviews.last.rating.to_i.times do  %><i class="fas fa-star" id="voted"></i> <% end %> <% (5 - @service.reviews.last.rating.to_i).times do  %><i class="fas fa-star" id="didnt-vote"></i> <% end %>
+ <div class="service-reviews" style='margin: 40px;'>
+  <p style='color:black'>Reviewer: <%= @service.reviews.last.user.email %></p>
+  <p style='color:black'>Comment: <%= @service.reviews.last.comment %></p>
+  <p style='color:black'>Rating:  <% @service.reviews.last.rating.to_i.times do  %><i class="fas fa-star" id="voted"></i> <% end %> <% (5 - @service.reviews.last.rating.to_i).times do  %><i class="fas fa-star" id="didnt-vote"></i> <% end %>
+  </p>
 </div>
 <% end %>
 

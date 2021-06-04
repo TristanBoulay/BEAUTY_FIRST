@@ -8,7 +8,13 @@ p  .t {
   margin-right: 40px
 }
 
+.review_rating {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 .rating-container {
+    //display: inline-flex;
     direction: rtl !important;
     label {
     display: inline-block;
