@@ -9,7 +9,11 @@ Rails.application.routes.draw do
   end
   get "team", to: "pages#team"
 
+  get "contact", to: "pages#contact"
+
   resources :bookings, only: :destroy
 end
+
+
 
 

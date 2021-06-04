@@ -4,6 +4,9 @@ class PagesController < ApplicationController
   def home
     @services = Service.all.sample(3)
   end
+
+  def contact
+  end
   
   def team
     
