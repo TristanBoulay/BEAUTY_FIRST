@@ -2,8 +2,12 @@
 
 <div class="container">
   <div class="card-trip-show">
-    <div class="img-show">
-    </div>
+
+<div class="img-show">
+    <%= cl_image_tag @service.photo.key %>
+</div>
+
+
   <div class="card-trip-infos-show">
     <h3 class= "display-3-show"> <%= @service.name %></h3>
     <p class="address-show">Address: <%= @service.address %></p>
@@ -19,20 +23,22 @@
      <li class="far fa-clock"></i> 10h / 19h</li>
 </ul>
  </div>
+ <div class="service-reviews">
+  <% @service.reviews.each do |review|  %>
+  <%= review.user.email %>
+  <%= review.comment %>
+  <% end %>
 
- 
+</div>
+
+
 <div id="map"
      style="width: 100%; height: 600px;"
      data-markers="<%= @markers.to_json %>"
      data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
 </div>
 
-<div class="service-reviews">
-  <% @service.reviews.each do |review|  %>
-  <%= review.comment %>
-  <% end %>
 
-</div>
 
 
 

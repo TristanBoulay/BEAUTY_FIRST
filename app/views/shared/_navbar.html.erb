@@ -13,16 +13,20 @@
     <ul class="navbar-nav mr-auto">
       <% if user_signed_in? %>
         <%= link_to services_path do %>
-          <li class="fa fa-shopping-cart"></li>
+          <div class="nav_icons"><li class="fa fa-shopping-cart"></li></div>
+          <div class="hide">Basket</div>
           <% end %>
         <%= link_to destroy_user_session_path, method: :delete do %>
-          <li class="fas fa-warehouse"></li>
+          <div class="nav_icons"><li class="fas fa-warehouse"></li></div>
+          <div class="hide">Register</div>
         <% end %>
         <% else %>
         <%= link_to new_user_session_path do %>
-          <li class="far fa-user"></li>
+          <div class="nav_icons"><li class="far fa-user"></li></div>
+          <div class="hide">Log in</div>
            <%= link_to new_user_registration_path do %>
-          <li class="fas fa-warehouse"></li>
+          <div class=" nav_icons"><li class="fas fa-warehouse"></li></div>
+           <div class="hide">Register</div>
            <% end %>
         <% end %>
       <% end %>

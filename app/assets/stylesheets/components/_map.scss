@@ -14,10 +14,14 @@
 }
 
 #map {
-  position: sticky;
-  top: 0;
-  flex-grow: 1;
-  margin-bottom: 16px;
+    position: sticky;
+    top: 0;
+    flex-grow: 1;
+    margin-bottom: 16px;
+    margin-right: 20px;
+    max-width: 80%;
+    position: sticky;
+
 }
 
 .mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan, .mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan .mapboxgl-canvas {
