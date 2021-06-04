@@ -2,8 +2,12 @@
 
 <div class="container">
   <div class="card-trip-show">
-    <div class="img-show">
-    </div>
+
+<div class="img-show">
+    <%= cl_image_tag @service.photo.key %>
+</div>
+
+
   <div class="card-trip-infos-show">
     <h3 class= "display-3-show"> <%= @service.name %></h3>
     <p class="address-show">Address: <%= @service.address %></p>
