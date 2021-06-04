@@ -1,20 +1,19 @@
-
-
-.card-1 p {
-  opacity: .5;
-  color:black;
+.cards-1 {
+text-align: center;
 }
 
-.card-1 {
- justify-content: space-between;
+.text-centered {
+ color: #6E798C;
+ font-family: roboto;
+ margin-top:130px;
+ margin-bottom: 20px;
 }
 
-.cards {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 30px;
+.text-centered:hover {
+   color: #black;
 }
 
-p {
-    color: #cb997e;
+.card-1:hover {
+background-color: #eeeeeb;
 }
+
